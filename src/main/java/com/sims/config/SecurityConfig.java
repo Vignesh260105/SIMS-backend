@@ -116,7 +116,7 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         // Allow requests from React dev server
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000"));
+                configuration.setAllowedOriginPatterns(Arrays.asList("https://sims-frontend-jmpt.onrender.com", "http://localhost:3000"));
 
         // Allow standard HTTP methods
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
